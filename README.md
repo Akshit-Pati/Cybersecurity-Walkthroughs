@@ -2,7 +2,7 @@
 My cybersecurity lab and CTF walkthroughs
 
 
-# HackerSchool Walkthrough
+# HS box Walkthrough
 
 ## Target Information
 
