@@ -14,7 +14,7 @@ My cybersecurity lab and CTF walkthroughs
 # Reconnaissance
 
 ## Nmap Scan
-
+![Nmap Scan](nmap-scan.png.png)
 ```bash
 nmap -sV -p- -T4 192.168.1.112
 ```
@@ -30,7 +30,8 @@ nmap -sV -p- -T4 192.168.1.112
 ---
 
 # FTP Enumeration
-
+## FTP Enumeration
+![FTP Anonymous Login](ftp-anonymous-login.png.png)
 Connected using anonymous login:
 
 ```bash
@@ -57,6 +58,11 @@ jack
 
 # Web Enumeration
 
+
+![Web Page](web page.png.png) 
+## CeWL Wordlist Generation
+![CeWL Output](cewl-web page.png.png)
+
 Generated wordlist using CeWL:
 
 ```bash
@@ -73,6 +79,12 @@ Cyberspace
 
 # SSH Access (Jack)
 
+## Jack Login
+
+![Jack SSH Login](jack-sshlogin.png.png)
+
+![Jack Password Found](bruteforce-jack.png.png)
+
 ```bash
 hydra -l jack -P sshpass.txt ssh://192.168.1.112:3535
 ```
@@ -88,6 +100,16 @@ Logged in successfully.
 ---
 
 # Goblin Enumeration
+
+## Goblin Hint
+
+![Goblin Hint](goblin-hint.png.png)
+
+![Crunch Wordlist](crunch-goblin.png.png)
+
+![Goblin Password Found](bruteforce-goblin.png.png)
+
+![Goblin SSH Login](ssh-goblin.png.png)
 
 Read note.txt:
 
@@ -140,7 +162,9 @@ sudo -i
 ---
 
 # Flag
+## Root Flag
 
+![Root Flag](final-flag.png.png)
 ```text
 root-flag{a9dcac68bfa4b4f6319e09fa041e3cb3}
 ```
